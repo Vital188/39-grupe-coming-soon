@@ -59,6 +59,10 @@ text-transform: uppercase;
     width: 40%;
 }
 
+.column.right-column > ab{
+    color: red;
+}
+
 .column-title {
     text-transform: uppercase;
     font-size: 18px;
@@ -70,7 +74,7 @@ text-transform: uppercase;
 }
 
 .column-description > a {
-    color: var(--secondary-color);
+    color: red;
     text-decoration: none;
 }
 
@@ -80,6 +84,8 @@ text-transform: uppercase;
 
 footer.container {
     padding-top: 0;
+    text-align: center;
+    line-height: 1.6em;
 }
 
 .socials {
@@ -106,6 +112,52 @@ footer.container {
     color: var(--main-color)
 }
 
+.footer-logo {
+    height: 40px;
+    width: 100%;
+    margin: 40px 0;
+    object-fit: contain;
+}
+
+.credits{
+    display: flex;
+    gap: 30px;
+    color:#fff8;
+    justify-content: center;
+}
+
+.credits > p {
+    position: relative;
+}
+
+.credits > p::after {
+content: '';
+display: block;
+position: absolute;
+width: 2px;
+height: 16px; ;
+top: 50%;
+right: -15px;
+background-color: #fff;
+transform: translate(50%, -50%);
+}
+
+.credits > p:last-child::after {
+display: none;
+    } 
+
+
+.credits > p > a {
+    color: #fff;
+}
+
+.bottom-text {
+    color: #fff8;
+    }
+
+.bottom-text > a {
+    color:#fff;
+}
 @media (max-width: 700px) {
     .main-content { 
     flex-direction: column;
@@ -114,7 +166,11 @@ footer.container {
     .main-content > * {
         width: 100%;
     }
+    .credits {
+        flex-direction: column;
     }
+    .credits > p::after {
+        display: none;}}
 
 @media (max-width: 500px) {
 .main-title { 
