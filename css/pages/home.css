@@ -4,7 +4,7 @@
 @import '../3rd-party/font-awesome.min.css';
 
 @import '../components/button.css';
-@import '../components/clock.css';
+@import '../components/clock-grid.css';
 @import '../components/form.css';
 @import '../components/mouse.css';
 @import '../components/progrss-bar.css';
