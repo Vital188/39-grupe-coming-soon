@@ -59,14 +59,7 @@ text-transform: uppercase;
 }
 
 .right-column {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
     width: 40%;
-}
-
-.column.right-column > ab{
-    color: red;
 }
 
 .column-title {
