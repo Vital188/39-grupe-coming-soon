@@ -4,13 +4,19 @@
 @import '../3rd-party/font-awesome.min.css';
 
 @import '../components/button.css';
-@import '../components/clock.css';
+@import '../components/clock-grid.css';
 @import '../components/form.css';
 @import '../components/mouse.css';
 @import '../components/progrss-bar.css';
 
 .hero {
     padding-bottom: 20px;
+    background-image: url(../../img/background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    background-attachment: fixed;
 }
 
 .hero > .row-short {
