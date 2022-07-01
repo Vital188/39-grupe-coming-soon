@@ -1,0 +1,25 @@
+.subscribe {
+    display: grid;
+    /* grid-column: 2; */
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    width: 83%;
+}
+
+.subscribe > .top-top {
+    background-color: var(--secondary-color);
+    color: #fff;
+    font-size: 20px;
+    padding: 0.8em 2em;
+    justify-self: center;
+    border: 2px solid var(--secondary-color);
+    grid-column: span 2;
+}
+
+.subscribe > .last {
+    grid-column: span 2;
+    border: none;
+    border-bottom: 2px solid #fff;
+    font-size: 20px;
+    color: none;
+}

@@ -4,19 +4,28 @@
 @import '../3rd-party/font-awesome.min.css';
 
 @import '../components/button.css';
-@import '../components/clock.css';
+@import '../components/clock-grid.css';
 @import '../components/form.css';
 @import '../components/mouse.css';
 @import '../components/progrss-bar.css';
+@import '../components/progress-bar-new.css';
+@import '../components/subscribe-form.css';
 
 .hero {
     padding-bottom: 20px;
+    background-image: url(../../img/background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    background-attachment: fixed;
 }
 
 .hero > .row-short {
     display: flex;
     flex-direction: column;
     text-align: center;
+    align-items: center;
     gap: 20px;
 }
 
@@ -53,9 +62,6 @@ text-transform: uppercase;
 }
 
 .right-column {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
     width: 40%;
 }
 
@@ -70,17 +76,103 @@ text-transform: uppercase;
 }
 
 .column-description > a {
-    color: var(--secondary-color);
+    color: red;
     text-decoration: none;
 }
 
 .column-description > a:hover {
     text-decoration: underline;
 }
+
 footer.container {
     padding-top: 0;
+    text-align: center;
+    line-height: 1.6em;
 }
 
+.socials {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    padding: 20px 0;
+    border-bottom: 2px solid #fff;
+    position: relative;
+}
+
+.socials > a{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.socials >a:hover {
+    background-color: #fff;
+    color: var(--main-color)
+}
+
+.socials > .back-to-top {
+    position: absolute;
+    top: -23px;
+    right: -14px;
+    border-radius: 50%;
+    border: 1px solid var(--secondary-color);
+    background-color: var(--secondary-color);
+}
+.socials > .back-to-top:hover {
+    color: var(--secondary-color);
+}
+
+.footer-logo {
+    height: 40px;
+    width: 100%;
+    margin: 40px 0;
+    object-fit: contain;
+}
+
+.credits{
+    display: flex;
+    gap: 30px;
+    color:#fff8;
+    justify-content: center;
+}
+
+.credits > p {
+    position: relative;
+}
+
+.credits > p::after {
+content: '';
+display: block;
+position: absolute;
+width: 2px;
+height: 16px; ;
+top: 50%;
+right: -15px;
+background-color: #fff;
+transform: translate(50%, -50%);
+}
+
+.credits > p:last-child::after {
+display: none;
+    } 
+
+
+.credits > p > a {
+    color: #fff;
+}
+
+.bottom-text {
+    color: #fff8;
+    }
+
+.bottom-text > a {
+    color:#fff;
+}
 @media (max-width: 700px) {
     .main-content { 
     flex-direction: column;
@@ -89,7 +181,11 @@ footer.container {
     .main-content > * {
         width: 100%;
     }
+    .credits {
+        flex-direction: column;
     }
+    .credits > p::after {
+        display: none;}}
 
 @media (max-width: 500px) {
 .main-title { 
